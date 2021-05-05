@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Ripple Task</string>
+    <string name="app_name">Ripple Task - GitHub repos search</string>
+    <string name="owner_avatar">Owner Avatar</string>
+    <string name="title">Title</string>
+    <string name="desc">Description</string>
+    <string name="repo_name">Repo name</string>
 </resources>
