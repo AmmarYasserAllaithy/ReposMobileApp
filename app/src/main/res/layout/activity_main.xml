@@ -29,7 +29,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_rounded"
-                android:hint="@string/repo_name"
+                android:hint="@string/et_hint"
                 android:inputType="text"
                 android:padding="@dimen/dimen_8"
                 app:layout_constraintEnd_toStartOf="@id/searchIB"

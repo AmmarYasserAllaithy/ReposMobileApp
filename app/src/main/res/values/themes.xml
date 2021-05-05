@@ -20,8 +20,10 @@
         <item name="android:padding">@dimen/dimen_8</item>
     </style>
 
-    <style name="ItemView.Title">
+    <style name="ItemView.Name">
+        <item name="android:color">@color/black</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
 </resources>
