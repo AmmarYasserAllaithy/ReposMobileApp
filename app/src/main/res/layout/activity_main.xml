@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".ui.main.view.MainActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/searchCLayout"
@@ -54,12 +54,23 @@
             android:clipToPadding="false"
             android:padding="@dimen/dimen_8"
             android:scrollbarStyle="outsideOverlay"
+            android:visibility="gone"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/searchCLayout"
             tools:listitem="@layout/item" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchCLayout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
