@@ -1,8 +1,11 @@
 package app.ammar.rippletask.data.api
 
+import app.ammar.rippletask.data.model.EntireResponse
+import retrofit2.Response
 
-class ApiHelper(private val apiService: ApiService) {
 
-    suspend fun getRepos(name: String) = apiService.get(name).repos
+interface ApiHelper {
+
+    suspend fun get(name: String): Response<EntireResponse>
 
 }

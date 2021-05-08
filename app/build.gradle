@@ -16,6 +16,8 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField 'String', 'BASE_URL', '"https://api.github.com/"'
     }
 
     buildTypes {
@@ -49,23 +51,34 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    implementation 'androidx.activity:activity-ktx:1.2.2'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
 
     // LifeCycle
     implementation 'androidx.lifecycle:lifecycle-common:2.3.1'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
-    implementation 'android.arch.lifecycle:extensions:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
 
     // Retrofit
-    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
-    implementation 'com.google.code.gson:gson:2.8.6'
-    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
-    implementation 'com.squareup.okhttp3:logging-interceptor:4.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+
+    //okhttp
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.2'
 
     // Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.3'
 
-    // Glide
-    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    //Koin
+    implementation "org.koin:koin-android-viewmodel:2.2.2"
+    implementation "org.koin:koin-android:2.2.2"
+
+    // Koin testing tools
+    testImplementation "org.koin:koin-test:2.2.2"
+    // Needed JUnit version
+    testImplementation "org.koin:koin-test-junit4:2.2.2"
 
 }
