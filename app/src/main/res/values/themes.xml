@@ -26,4 +26,15 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <style name="CardItem.Info">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">@dimen/dimen_8</item>
+        <item name="android:background">@drawable/bg_info</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginStart">2dp</item>
+        <item name="android:layout_marginEnd">2dp</item>
+    </style>
+
 </resources>

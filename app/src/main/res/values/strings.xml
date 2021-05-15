@@ -1,7 +1,14 @@
 <resources>
-    <string name="app_name">Ripple Task</string>
+    <string name="app_name">Repos Mobile App</string>
     <string name="owner_avatar">Owner Avatar</string>
     <string name="title">Title</string>
     <string name="desc">Description</string>
     <string name="et_hint">Search for Github repo!</string>
+    <string name="owner_name">\@%s</string>
+    <string name="language">Language</string>
+    <string name="licence">Licence</string>
+    <string name="stars">Stars</string>
+    <string name="forks">Forks</string>
+    <string name="issues">Issues</string>
+    <string name="info">Info</string>
 </resources>

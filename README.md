@@ -47,6 +47,12 @@
 
 ### Preview
 
-| Light mode                  | Night mode                  |
-| --------------------------- | --------------------------- |
-| ![Light](preview/light.jpg) | ![Night](preview/night.jpg) |
+#### New
+| Light                         | Night                         |
+| ----------------------------- | ----------------------------- |
+| ![Light](preview/light.2.jpg) | ![Night](preview/night.2.jpg) |
+
+#### Old
+| Light                         | Night                         |
+| ----------------------------- | ----------------------------- |
+| ![Light](preview/light.jpg)   | ![Night](preview/night.jpg)   |

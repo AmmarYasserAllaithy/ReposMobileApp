@@ -1,1 +1,4 @@
 /build
+/src/main/res/values/attrs.xml
+/src/main/res/layout/item_info.xml
+/src/main/java/app/ammar/rippletask/ui/main/view/InfoLayout.kt

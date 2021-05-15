@@ -28,7 +28,7 @@
 
             <ImageView
                 android:id="@+id/avatarIV"
-                avatar="@{repo}"
+                owner_avatar="@{repo}"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:contentDescription="@string/owner_avatar"
@@ -38,23 +38,95 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/repoNameIV"
-                style="@style/CardItem.Name"
-                full_name="@{repo}"
+                android:id="@+id/ownerNameTV"
+                style="@style/CardItem"
+                owner_name="@{repo}"
                 android:gravity="center"
-                android:hint="@string/title"
+                android:hint="@string/owner_name"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/avatarIV" />
 
+
             <TextView
-                android:id="@+id/repoDescIV"
+                android:id="@+id/repoNameTV"
+                name="@{repo}"
+                style="@style/CardItem.Name"
+                android:gravity="center"
+                android:hint="@string/title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ownerNameTV" />
+
+
+            <TextView
+                android:id="@+id/repoDescTV"
                 style="@style/CardItem"
                 desc="@{repo}"
+                android:gravity="center"
                 android:hint="@string/desc"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/repoNameIV" />
+                app:layout_constraintTop_toBottomOf="@+id/repoNameTV" />
+
+
+            <TextView
+                android:id="@+id/repoLicTV"
+                style="@style/CardItem.Info"
+                license="@{repo}"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|start"
+                app:drawableStartCompat="@drawable/ic_scale"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/repoDescTV" />
+
+
+            <TextView
+                android:id="@+id/repoLangTV"
+                style="@style/CardItem.Info"
+                language="@{repo}"
+                android:layout_width="wrap_content"
+                android:hint="@string/language"
+                app:drawableTopCompat="@drawable/ic_code"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/repoStarsTV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/repoLicTV" />
+
+            <TextView
+                android:id="@+id/repoStarsTV"
+                style="@style/CardItem.Info"
+                stars="@{repo}"
+                android:layout_height="wrap_content"
+                android:hint="@string/stars"
+                app:drawableTopCompat="@drawable/ic_baseline_star_border_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/repoForksTV"
+                app:layout_constraintStart_toEndOf="@+id/repoLangTV"
+                app:layout_constraintTop_toBottomOf="@+id/repoLicTV" />
+
+            <TextView
+                android:id="@+id/repoForksTV"
+                style="@style/CardItem.Info"
+                forks="@{repo}"
+                android:hint="@string/forks"
+                app:drawableTopCompat="@drawable/ic_code_fork"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/repoIssuesTV"
+                app:layout_constraintStart_toEndOf="@id/repoStarsTV"
+                app:layout_constraintTop_toBottomOf="@+id/repoLicTV" />
+
+            <TextView
+                android:id="@+id/repoIssuesTV"
+                style="@style/CardItem.Info"
+                issues="@{repo}"
+                android:hint="@string/issues"
+                app:drawableTopCompat="@drawable/ic_outline_info_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/repoForksTV"
+                app:layout_constraintTop_toBottomOf="@+id/repoLicTV" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
