@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
                         recycler.visibility = View.VISIBLE
                         progress.visibility = View.GONE
 
-                        Toast.makeText(this@MainActivity, it.message, Toast.LENGTH_LONG).show()
+                        Toast.makeText(this@MainActivity, it.message, Toast.LENGTH_SHORT).show()
                     }
 
                 }
@@ -84,8 +84,10 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    private fun hideKeyboard() =
+    private fun hideKeyboard() {
         (getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager)
             ?.hideSoftInputFromWindow(binding.searchCLayout.windowToken, 0)
 
+        binding.searchET.clearFocus()
+    }
 }
